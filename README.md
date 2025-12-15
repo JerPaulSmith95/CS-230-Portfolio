@@ -1,2 +1,25 @@
 # CS-230-Portfolio
-Software Design Document for CS-230 Draw It or Lose It game
+
+* Briefly summarize The Gaming Room client and their software requirements. Who was the client? What type of software did they want you to design?
+
+The client, The Gaming Room, has asked that we port their current game, Draw It or Lose it, to other operating systems so that it has a wider audience. Since the game already exists as an Adroid app, the client requested that we update the game following a web-based model so that it can be accessible from multiple platforms.
+
+* What did you do particularly well in developing this documentation?
+
+In each section of this document, I was sure to highlight the advantages that each operating system has for the development of this application, showcasing that each OS could be adapted to create the game if need be. I also took approaches from a cost saving mindset for the client when highlighting various aspects of the development process, as that should be a driving factor when it comes to making decisions about which operating system to use, which is why I suggested that the game be developed using Linux.
+
+* What about the process of working through a design document did you find helpful when developing the code?
+
+One thing that I remember reading in our resources was that one advantage to using a design document when developing software was that if done correctly, you could essentially leave for a two week vacation and the rest of your development team should be able to develop the software with little to no issues and everything would be fine (paraphrased here). When going through this document, that idea became clearer and clearer as each section went on, because at the end of the document when I laid out my suggestions and why, anyone who read through the document in its entirety could see the train of thought as to why I came to the conclusions that I did and could use the various information that I laid out, (such as which programming langauges are better suited to Linus development, IDEs that come with those languages, how/why I thought the memory should be managed, etc.), to start the development process even if I was not there. 
+
+* If you could choose one part of your work on these documents to revise, what would you pick? How would you improve it?
+
+I would improve on the UML Diagram explanation. Mainly what I would do is delete the section and rewrite it without looking at what I had previously wrote so that I could see if I fully grapsed the concepts of a UML diagram and how it functions. I think that I did an okay job at it but as I wrote it, I feel like I struggled with identifying the purpose of the ProgramDriver and SingletonTester classes and their use in the overall program. 
+
+* How did you interpret the user’s needs and implement them into your software design? Why is it so important to consider the user’s needs when designing?
+
+One trend that is beinig discussed more and more in this modern age of software usage is performance. Lots of reviews for games or various applications these days talk about topics such as RAM usage or how lots of programs take up muich more storage space than they need to and how different aspects of software design can cut down on what is referred to as "bloat". I kept this in mind when offering my suggestions for development and the user's experience overall, with key points being how I suggested storing most of the game's information, like the overall code and the library of image files, in a could that the user then just downloads in the background when they connect to the game. As I stated in the document, having the user download all the files of the game every time they connected to a session would be a signficant factor in determining whether a user would play the game again, as a 10-20 second wait for a small download can be viewed as a connection state whereas waiting for a few minutes each time just to play a short game would be too much for most people. Since any game studio would want recurrent players, limiting factors that would drive them away was essential when thinking of the design requirements for the game. 
+
+* How did you approach designing software? What techniques or strategies would you use in the future to analyze and design a similar software application?
+
+One approach that I used was to think of similar software that I have already used that I could draw inspiration from. For example, a game like this reminds me some games that I am familiar with called Jackbox games. They have a main game that is purchased and downloaded that has five smaller party games with it that users connect to with their phones and interact with the game through a browser, but the prompts and images are displayed from the console. When I was thinking of how this game should be designed, I drew some inspiration from those games and how the minimal amount of data is used on both the console side (where the game is ran) and the users side (where the players interact with the game). The file sixe for the overall game is very small and that is because all of the data for the game really exists in a could based environment, similar to how I suggested this game should be designed, and the data like the GUI for the user's and the game itself is only downloaded to the respective devices when needed. 
